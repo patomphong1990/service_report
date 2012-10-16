@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 10px}
+.style2 {font-size: 12px}
+-->
+</style>
+<script language="javascript">
+	function checkAccount(){
+		username = document.form1.username.value;
+		password = document.form1.password.value;
+		
+		if(username == 'admin'){
+			location.open('home_employee.html');
+		}else{
+			open('home_employee.html');
+		}
+	}
+</script>
+</head>
+<body>
+<table width="800" border="0" cellpadding="0" cellspacing="0" align="center">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="71" colspan="3" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="213" height="399" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+    <td width="431" valign="top">
+      <form id="form1" name="form1" method="post" onsubmit="checkAccount();" style="background-image:url(image/guest-login-bg.png); background-repeat:no-repeat;">
+        <center>	<label><span class="style1"><span class="style2"><br />
+          <br /><br /><br /><br /><br />
+          <br />
+          <br />          
+          <b>username : </b></span> 
+          <input name="username" type="text" value="" id="username" size="30" style="border: 2px solid gray; height:25px;"/></label><br/><br/>
+          <label><span class="style2"><b>password : </b></span> 
+          <input name="password" type="password" id="password" size="30" style="border: 2px solid gray; height:25px"/>
+          <br />
+             <input type="image" name="imageField" id="imageField" src="image/login_icon.png" width="100" height="40" style="margin-left:200px;"/>
+            <br /><br /><br /><br /><br />
+            <br />
+            <br />
+            <br />
+            <br />
+   		  </label>
+          </center>
+      </form></td>
+  <td width="156" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
